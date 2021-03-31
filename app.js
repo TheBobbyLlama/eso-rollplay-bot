@@ -114,7 +114,7 @@ client.on("message", (msg) => {
 					output += "-".repeat(50) + "\n*No Description Given.*\n";
 				}
 
-				if (profile.biography) output += "-".repeat(19) + " BIOGRAPHY " + "-".repeat(20) + "\n" + profile.biography + "\n";
+				if (profile.biography) output += "-".repeat(18) + " **BIOGRAPHY** " + "-".repeat(18) + "\n" + profile.biography + "\n";
 
 				output = output.replace(/#+\s*?.+?\n/g, (match) => { return match.replace(/^#+\s*/, "").toUpperCase(); })
 								.replace(/{(.+?)}/g, "$1") // Custom MD formatting - profile links
